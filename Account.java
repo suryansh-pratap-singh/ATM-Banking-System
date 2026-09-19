@@ -11,8 +11,15 @@ public class Account {
         balance = balance + amount;
     }
 
+    public String getAccountNumber(){
+        return accountNumber;
+    }
+    public String getAccountHolderName(){
+        return accountHolderName;
+    }
+
     public void withdraw(float amount){
-        if(amount<balance){
+        if(amount<=balance){
             balance = balance - amount;
         }
         else{
