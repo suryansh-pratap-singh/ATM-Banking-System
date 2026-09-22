@@ -1,6 +1,5 @@
 public class Account {
     private String accountNumber;
-    private String accountHolderName;
     private float balance;
 
     public float getBalance(){
@@ -14,9 +13,6 @@ public class Account {
     public String getAccountNumber(){
         return accountNumber;
     }
-    public String getAccountHolderName(){
-        return accountHolderName;
-    }
 
     public void withdraw(float amount){
         if(amount<=balance){
@@ -27,9 +23,8 @@ public class Account {
         }
     }
 
-    public Account(String accountNumber, String accountHolderName, float balance){
+    public Account(String accountNumber,  float balance){
         this.accountNumber = accountNumber;
-        this.accountHolderName = accountHolderName;
         this.balance = balance;
     }
 }
